@@ -1,23 +1,21 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
-main(){
-    float  i , a ,b , c;
-    int faktöriyel = 1;
-    int x = 3, n;
+#include <stdlib.h>
 
-        for (n = 1 ; n <= 5 ; n++)
-        {
-            a = pow ((-1) , n);
-            printf("a = %f\n",a);
-            b = pow (x ,(2*n));
-            printf("b = %f\n",b);
-            i += a * b/ 2*faktöriyel;
-            printf("%d. adım sonucu = %f",n,i);
-            printf("\n");
-        }
-    for ( c=1;c<= n;c++){
-        faktöriyel *= c;
-        printf ("faktöriyel = %d\n", faktöriyel);}
-        printf("\n işlem sonucu = %f",i);
+int main(){
+    double n,a,b;
+    double formul = 0.0;
+    
+    for (n=0; n<=1000; n++ )
+    {
+        a=2;
+        printf ("a=%f\n",a);
+        b= ((4*n+1)*(4*n+3));
+        printf ("b=%f\n",b);
+        formul += 4*(a/b);
+       
+       
+    
+    }
+    printf ("\n formul = %f", formul);
+    return 0;
 }
